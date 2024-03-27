@@ -1,3 +1,4 @@
+if game:GetService("ReplicatedStorage").GameData.Floor.Value ~= "Hotel" or game:GetService("ReplicatedStorage").GameData.Floor.Value ~= "Rooms" then return end
 game:GetService("Workspace").CurrentRooms.DescendantAdded:Connect(function(v)
     if not _G.IncreasedDistance then return end
     if v.IsA(v,"ProximityPrompt") then
